@@ -24,7 +24,8 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Backend for Hotel Booking Sample App, developed using the powerful [Nest](https://github.com/nestjs/nest) framework along with TypeScript.
+
 
 ## Installation
 
@@ -57,6 +58,15 @@ $ yarn run test:e2e
 # test coverage
 $ yarn run test:cov
 ```
+
+## CI/CD and Deployment
+
+This repository is set up with CI/CD using GitHub Actions. On pushing to the master branch, an automated pipeline is triggered to run tests and deploy the application. To ensure successful deployment, the following secrets are required: 
+
+`APP_NAME`: Name of the application  (Used for pm2).\
+
+
+https://github.com/s1davide/cloudformation-technical-test
 
 ## Support
 
