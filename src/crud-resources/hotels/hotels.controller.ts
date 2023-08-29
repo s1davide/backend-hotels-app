@@ -43,8 +43,6 @@ export class HotelsController {
     @Query('dateTo') dateTo: string,
     @Query('persons') persons: number,
   ) {
-    console.log("available");
-    
     return this.hotelsService.findAvailable(
       location,
       dateFrom,

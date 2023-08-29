@@ -38,11 +38,10 @@ export class ReservationsService {
       .replace('${book-cost}', costFormatted)
       .replace('${dateinout}', `${dateFrom} - ${dateTo} (${days} días)`);
 
-
      this.azureService.sendEmail({senderAddress:"DoNotReply@cdd6be92-d3ea-4993-97fe-9a7e12cb84a3.azurecomm.net",content:{subject:"Reservación creada desde Hotels App",html:file}
     ,recipients:{
       to:[
-        {address:"sdavide1010@gmail.com", displayName:"User Name"}
+        {address:personsData.email, displayName:`${personsData.name} ${personsData.lastName}`}
       ]    }})
     return [];
   }
